@@ -3,9 +3,9 @@ const createManager = function (manager) {
     return `
     <div class="col-4 mt-4">
         <div class="card h-100">
-            <div class="card-header">
-                <h3>${manager.name}</h3>
-                <h4>Manager</h4>
+            <div class="bg-primary card-header">
+                <h3 class ="text-white">${manager.name}</h3>
+                <h4 class="text-white">Manager</h4>
             </div>
             <div class="card-body">
                 <p class="id">ID: ${manager.id}</p>
@@ -21,10 +21,10 @@ const createManager = function (manager) {
 const createEngineer = function (engineer) {
     return `
     <div class="col-4 mt-4">
-        <div class="card h-100">
-            <div class="card-header">
-                <h3>${engineer.name}</h3>
-                <h4>Engineer</h4>
+        <div class="card h-100 .bg-danger">
+            <div class="bg-primary card-header">
+                <h3 class ="text-white">${engineer.name}</h3>
+                <h4 class ="text-white">Engineer</h4>
             </div>
             <div class="card-body">
                 <p class="id">ID: ${engineer.id}</p>
@@ -41,10 +41,10 @@ const createEngineer = function (engineer) {
 const createIntern = function (intern) {
     return `
     <div class="col-4 mt-4">
-        <div class="card h-100">
-            <div class="card-header">
-                <h3>${intern.name}</h3>
-                <h4>Intern</h4>
+        <div class="card h-100 ">
+            <div class="bg-primary card-header">
+                <h3 class ="text-white">${intern.name}</h3>
+                <h4 class ="text-white">Intern</h4>
             </div>
 
             <div class="card-body">
@@ -91,7 +91,7 @@ generateHTML = (data) => {
     }
 
     const employeeCards = pageArray.join('')
-    
+
     const createTeam = createTeamPage(employeeCards); 
     return createTeam;
 
@@ -109,9 +109,9 @@ const createTeamPage = function (employeeCards) {
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   </head>
   <body>
-      <header>
+      <header class="bg-danger">
           <nav class="navbar" id="navbar">
-              <span class="mb-0 h1 w-100 text-center" id="navbar-text">Team Profile</span>
+              <span class="text-white mb-0 h1 w-100 text-center" id="navbar-text">Team Profile</span>
           </nav>
       </header>
       <main>
