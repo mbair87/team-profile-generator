@@ -5,7 +5,7 @@ const createManager = function (manager) {
         <div class="card h-100">
             <div class="bg-primary card-header">
                 <h3 class ="text-white">${manager.name}</h3>
-                <h4 class="text-white">Manager</h4>
+                <h4 class="text-white">Manager</h4><i class="material-icons" style="color:white">local_cafe</i>
             </div>
             <div class="card-body">
                 <p class="id">ID: ${manager.id}</p>
@@ -24,7 +24,7 @@ const createEngineer = function (engineer) {
         <div class="card h-100 .bg-danger">
             <div class="bg-primary card-header">
                 <h3 class ="text-white">${engineer.name}</h3>
-                <h4 class ="text-white">Engineer</h4>
+                <h4 class ="text-white">Engineer</h4><i class="material-icons" style="color:white">engineering</i>
             </div>
             <div class="card-body">
                 <p class="id">ID: ${engineer.id}</p>
@@ -44,7 +44,7 @@ const createIntern = function (intern) {
         <div class="card h-100 ">
             <div class="bg-primary card-header">
                 <h3 class ="text-white">${intern.name}</h3>
-                <h4 class ="text-white">Intern</h4>
+                <h4 class ="text-white">Intern</h4><i class="material-icons" style="color:white">school</i>
             </div>
 
             <div class="card-body">
@@ -107,6 +107,7 @@ const createTeamPage = function (employeeCards) {
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Team Profile</title>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
       <header class="bg-danger">
